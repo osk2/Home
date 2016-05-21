@@ -3,6 +3,10 @@ a[target="_blank"]:after {
 	content: " \f08e";
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 .icon {
 	max-width: 100px;
 }
@@ -66,4 +70,23 @@ a[target="_blank"]:after {
 .icon.logo {
 	width: 80px;
 	margin: 1em 0 0 1em;
+}
+
+.contact-item {
+	display: table;
+	border-collapse: separate;
+	border-spacing: .8em;
+
+}
+
+.contact-icon, .contact-text {
+	display: table-cell;
+}
+
+.contact-icon {
+	font-size: 2em;
+}
+
+.section.footer {
+	margin-bottom: 0;
 }
