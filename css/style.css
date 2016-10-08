@@ -41,7 +41,24 @@ a:hover {
 	max-width: 100px;
 }
 
+.status-wrapper {
+	display: flex;
+	width: 100%;
+	overflow: hidden;
+	overflow-x: auto;
+}
+
+.fa.fa-chevron-left {
+	padding: 0 5px;
+	line-height: 480%;
+	font-size: 1.5em;
+}
+
 .status.past {
+	opacity: .3;
+}
+
+.description.past {
 	opacity: .3;
 }
 
@@ -65,10 +82,15 @@ a:hover {
 
 .status-column .cleared {
 	top: 40%;
-	left: 15%;
+	left: 10%;
 	color: #ec4d49 !important;
-	transform: rotate(-45deg);
+	transform: rotate(-30deg);
 	font-size: 1.7em;
+	font-weight: bold;
+}
+
+p.skill-title {
+	font-size: 1.3em;
 	font-weight: bold;
 }
 
