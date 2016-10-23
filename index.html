@@ -6,14 +6,15 @@
 	<title>osk2</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/jqcloud.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		!function(o,s,k,m,a,d,e){o.GoogleAnalyticsObject=k;o[k]||(o[k]=function(){
+		(o[k].q=o[k].q||[]).push(arguments)});o[k].l=+new Date;d=s.createElement(m);
+		e=s.getElementsByTagName(m)[0];d.src=a;e.parentNode.insertBefore(d,e)}
+		(window,document,'ga','script','//www.google-analytics.com/analytics.js');
 
 		ga('create', 'UA-69159377-3', 'auto');
 		ga('send', 'pageview');
@@ -135,7 +136,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>玩具&nbsp;<small>/&nbsp;小心查水錶</small></h2>
+					<h2>玩具&nbsp;<small>//&nbsp;小心查水錶</small></h2>
 					<p>&nbsp;</p>
 					<ul class="media-list">
 						<li class="media">
@@ -243,7 +244,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>壯舉&nbsp;<small>/&nbsp;好像很厲害</small></h2>
+					<h2>壯舉&nbsp;<small>//&nbsp;好像很厲害</small></h2>
 					<p>&nbsp;</p>
 					<div class="row">
 						<div class="col-md-4 col-sm-6">
@@ -337,7 +338,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2>聯絡&nbsp;<small>/&nbsp;Where to find me</small></h2>
+					<h2>聯絡&nbsp;<small>//&nbsp;Where to find me</small></h2>
 
 					<div class="contact-item">
 						<div class="contact-icon">
@@ -400,7 +401,7 @@
 						</div>
 						<div class="contact-text">
 							<a href="http://osk2.pixnet.net/blog">
-								<h4>osk2</h4>
+								<h4>Owrite</h4>
 							</a>
 						</div>
 					</div>
@@ -443,11 +444,18 @@
 
 	<script src="//code.jquery.com/jquery-2.2.3.min.js"></script>
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="js/jquery.tagcloud.js"></script>
 	<script>
 		(function blink() { 
 			$('.status.now').fadeOut(800).fadeIn(800, blink);
 		})();
 
+		$.fn.tagcloud.defaults = {
+			size: {start: .8, end: 1.5, unit: 'em'},
+			color: {start: '#1E8BC3', end: '#D24D57'}
+		};
+
+		$('.skill-tags span').tagcloud();
 	</script>
 </body>
 </html>
