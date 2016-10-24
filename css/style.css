@@ -58,6 +58,13 @@ a:hover {
 	opacity: .3;
 }
 
+.description {
+	position: absolute;
+	text-align: center;
+	width: 100px;
+	bottom: -3px;
+}
+
 .description.past {
 	opacity: .3;
 }
