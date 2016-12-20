@@ -114,6 +114,11 @@ p.skill-title {
 	color: rgba(0, 0, 0, .5);
 }
 
+
+.nav > li > a:hover {
+	color: #fff;
+}
+
 .media-heading {
 	display: inline-block;
 }
