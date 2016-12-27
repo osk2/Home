@@ -114,9 +114,20 @@ p.skill-title {
 	color: rgba(0, 0, 0, .5);
 }
 
-
 .nav > li > a:hover {
 	color: #fff;
+}
+
+#translation .media {
+	border-bottom: 3px dotted #ccc;
+}
+
+.media-left {
+	border-bottom: 1px #ccc;
+}
+
+.media-left img {
+	max-width: 50px;
 }
 
 .media-heading {
