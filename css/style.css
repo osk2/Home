@@ -130,6 +130,10 @@ p.skill-title {
   max-width: 50px;
 }
 
+.media-left .logo {
+  margin-top: 10%;
+}
+
 .media-heading {
   display: inline-block;
 }
