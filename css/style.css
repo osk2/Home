@@ -29,7 +29,7 @@ a:hover {
 }
 
 .cursor {
-  vertical-align: text-top;
+  vertical-align: top;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
   -ms-animation: 1s blink step-end infinite;
